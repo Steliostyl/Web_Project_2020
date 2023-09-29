@@ -1,0 +1,335 @@
+/* Main */
+
+body,
+html {
+    margin: 0px;
+    background-color: rgb(25, 25, 25);
+    color: rgb(220, 220, 220);
+}
+
+/* Navigation bar */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    padding-right: 1vw;
+    background-color: rgb(35, 35, 35);
+}
+
+.nav-element {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    font-size: 2.5vh;
+    margin: 0px;
+    color: rgb(189, 138, 0);
+    background-color: inherit;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-element a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: inherit;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.nav-element a:hover {
+    border-bottom: 2px solid rgb(149, 110, 0);
+    color: rgb(149, 109, 0);
+}
+
+.nav-element :hover:enabled {
+    border-bottom: 2px solid rgb(149, 110, 0);
+    color: rgb(149, 110, 0);
+}
+
+.nav-element input {
+    text-transform: inherit;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* Content wrapper */
+
+.content-wrapper {
+    position: absolute;
+    top: 8vh;
+    bottom: 0px;
+    width: 100%;
+}
+
+.background {
+    position: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/background1.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    color: rgb(189, 138, 0);
+    transition: 1s;
+    font-weight: 800;
+    font-size: 13vmin;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.chart-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80%;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.filters>select {
+    background-color: transparent;
+    color: white;
+}
+
+option {
+    background-color: transparent;
+}
+
+/* Sectors */
+
+.sectors-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.sector-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    position: center;
+    display: block;
+}
+
+.img-background {
+    height: 95%;
+    width: 95%;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img-text-wrapper {
+    font-size: 0.8vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.img-text-wrapper .sector-title {
+    transition: 1s;
+    font-weight: 800;
+    font-size: 500%;
+    color: transparent;
+    margin: auto;
+}
+
+.img-text-wrapper:hover .sector-title {
+    font-weight: 800;
+    font-size: 500%;
+    color: rgb(189, 138, 0);
+    margin: auto;
+}
+
+.img-text-wrapper .sector-info {
+    transition: 1s;
+    font-weight: 300;
+    font-size: 300%;
+    color: transparent;
+    margin: auto;
+}
+
+.img-text-wrapper:hover .sector-info {
+    font-weight: 300;
+    color: rgb(189, 138, 0);
+    font-size: 300%;
+    margin: auto;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* Form */
+
+.form {
+    transition: 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    padding: 25px;
+    font-weight: 800;
+    font-size: 3vh;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.form>label,
+.form>select {
+    width: 100%;
+    margin: 1vh 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(189, 138, 0);
+    background-color: transparent;
+}
+
+input[type=text],
+input[type=password],
+select {
+    width: 100%;
+    padding: 2vh 3vw;
+    margin: 1vh 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5vh
+}
+
+.form>input[type=submit],
+.form>input[type=button] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: rgb(189, 138, 0);
+    color: white;
+    padding: 1vh 1.4vw;
+    margin: 1vh 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.form>input[type=button]:disabled {
+    background-color: rgb(136, 100, 0);
+    cursor: default;
+}
+
+.form>input[type=submit]:hover,
+.form>input[type=button]:hover:enabled {
+    background-color: rgb(136, 100, 0);
+}
+
+
+.form>input[type=file] {
+    font-size: 0.53em;
+    background-color: transparent;
+    margin-bottom: 12px;
+    color: rgb(150, 150, 150);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pwdReq {
+    font-size: 0.4em;
+}
+
+/* Misc */
+
+.username {
+    color: rgb(124, 26, 2);
+}
+
+.error {
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    color: rgb(190, 190, 190);
+    font-weight: 200;
+    font-size: 2vmin;
+}
+
+/* Leaflet */
+
+#map {
+    height: 100%;
+}
+
+/* Tables */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    text-align: center;
+    vertical-align: center;
+    /*border: 1px solid rgb(136, 100, 0);*/
+    padding: 0 10px;
+    font-size: 1.5vh;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-size: 2vh;
+    padding: 0.5vh 2vw;
+    text-align: center;
+    vertical-align: center;
+}
